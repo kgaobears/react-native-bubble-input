@@ -7,8 +7,24 @@
 
 # Usage
 
-```
+```jsx
 <BubbleInput data = [] />
+```
+
+```
+<BubbleInput data = [{ name: "John", age:35 }, { name: "Betty", age:32 }]
+             renderItem = (item) => {
+               return <View style={{flexDirection: 'row'}}>
+                  <Text>{item.name}</Text>
+                  <Text style={{fontSize: 6}}>{item.age}</Text>
+                  </View>
+               }
+             placeholder = "Add next..."
+             addData = (textInput) => {
+                const [name, age] = textInput.split(':');
+               return {name: name, age: age}
+             }
+             />
 ```
 ## Props
 
