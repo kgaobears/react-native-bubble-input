@@ -81,8 +81,10 @@ const BubbleInput = ({
           }
           data.push(addData(event.nativeEvent.text));
 
-          setDummyState(!dummyState);
           ref.current.clear();
+          setTimeout(() => {
+            setDummyState(!dummyState);
+          }, 100);
           ref.current.textInputValue = '';
         }}
         style={{
