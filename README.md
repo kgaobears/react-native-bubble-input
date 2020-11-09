@@ -8,9 +8,9 @@
 # Usage
 
 ```jsx
-<BubbleInput data = [] />
+<BubbleInput data = ['input1', 'input2'] />
 ```
-Default behavior is, it takes the text input wholesale and puts that in a bubble. If you want to do anything special, you have to use the `renderItem` and `addData` props. Make sure whatever you output in addData has the same structure as the input to renderItem.
+Default behavior is it holds strings, it takes the text input wholesale and puts that in a bubble. If you want to do anything special, you have to use the `renderItem` and `addData` props. <b>Make sure whatever you output in addData has the same structure as the input to renderItem.</b>
 
 ```jsx
 <BubbleInput data = [{ name: "John", age:35 }, { name: "Betty", age:32 }]
