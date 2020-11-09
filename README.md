@@ -10,8 +10,9 @@
 ```jsx
 <BubbleInput data = [] />
 ```
+Default behavior is, it takes the text input wholesale and puts that in a bubble. If you want to do anything special, you have to use the `renderItem` and `addData` props. Make sure whatever you output in addData has the same structure as the input to renderItem.
 
-```
+```jsx
 <BubbleInput data = [{ name: "John", age:35 }, { name: "Betty", age:32 }]
              renderItem = (item) => {
                return <View style={{flexDirection: 'row'}}>
@@ -28,7 +29,7 @@
 ```
 ## Props
 
-- **`renderItem`** _(Object)_ - Messages to display
-- **`placeholder`** _(String)_ - Typing Indicator state; default `false`. If you use`renderFooter` it will override this.
+- **`renderItem`** _(Object)_ - custom render of bubble
+- **`placeholder`** _(String)_ - TextInput placeholder before anything is typed in. Disappears once there are bubbles in the textInput
 - **`addData`** _(Object)_ - Add object of any structure to render in renderItem
-- **`data`** _(Array)_ - bubble texts to display
+- **`data`** _(Array)_ - the text content of the bubbles
