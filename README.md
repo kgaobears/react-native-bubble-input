@@ -1,5 +1,6 @@
 # react-native-bubble-input
 ![npm](https://img.shields.io/npm/v/react-native-bubble-input)
+[![CodeFactor](https://www.codefactor.io/repository/github/qrosakee/react-native-bubble-input/badge)](https://www.codefactor.io/repository/github/qrosakee/react-native-bubble-input)
 
 ![](https://i.imgur.com/uPMYiY4.gif)
 # Installation
